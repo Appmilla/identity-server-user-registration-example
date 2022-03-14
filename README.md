@@ -1,4 +1,4 @@
-# identity-server-user-registration-example
+# IdentityServer User Registration with PKCE Mobile App Client
 IdentityServer v6 with ASP.Net Core Identity for user registration and focus on mobile client using PKCE OAuth 2.0 flow.
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ

@@ -1,0 +1,14 @@
+<package>
+  <metadata>
+    <id>Appmilla.IdentityUserReg</id>
+    <version>1.0</version>
+    <authors>Appmilla</authors>
+    <description>IdentityServer with ASP.Net Core Identity</description>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+<files>
+  <file src="**" exclude= "bin\**;obj\**;.vs\**;.vscode\**;.git\**;*.nuspec" target="content/" />
+  </files>
+</package>

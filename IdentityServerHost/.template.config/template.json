@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Appmilla",
+    "classifications": [ "Web", "MVC", "Razor Pages" ],
+    "name": "Identity Server with ASP.NET User Registration",
+    "identity": "IdentityServerUserRegistration", 
+    "shortName": "isuserreg",                 
+    "tags": {
+        "language": "C#",
+        "type": "project"                      
+    },
+    "sourceName": "IdentityServerHost", 
+    "preferNameDirectory" : "true"
+}

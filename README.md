@@ -32,3 +32,20 @@ WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel
 WebClient - Asp.Net MVC app from the quickstart, log in with OIDC, redirect and display the claims info. Used as a stepping stone to prove the Identity Server works locally before publishing to Azure.
 
 Steps to recreate can be found in the Word doc DuendeIdentityServerAndAspNetIdentity.docx
+
+
+If we don't want to use nuget package would install the template using 
+dotnet new --install
+
+in the directory IdentityServerHost
+
+>C:\Nuget\nuget.exe pack C:\appmilla_github\identity-server-user-registration-example\IdentityServerHost\IdentityServerHost.nuspec
+
+dotnet new -i Appmilla.IdentityUserReg.1.0.0.nupkg
+
+Success: Appmilla.IdentityUserReg::1.0.0 installed the following templates:
+Template Name                                   Short Name  Language  Tags
+----------------------------------------------  ----------  --------  -------------------
+Identity Server with ASP.NET User Registration  isuserreg   [C#]      Web/MVC/Razor Pages
+
+C:\appmilla_github\IdentityTemplateTest>dotnet new isuserreg -n IdentityServerRich

@@ -28,14 +28,14 @@ WebAuthenticatorDemo - Xamarin.Forms app using Hybrid flow and secret - update t
 
 WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel OIDC Client library - update the Constants to point to url's you have published locations of the IdentityServer and API.
 
-Please note when using the IdentityModel.OidcClient you may bump into (this problem)[https://github.com/IdentityModel/IdentityModel/issues/408]
+Please note when using the IdentityModel.OidcClient you may bump into this problem https://github.com/IdentityModel/IdentityModel/issues/408
 
-The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from (David Britch)[https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html]
+The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from David Britch https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html
 
-I had to workaround an (issue)[https://github.com/IdentityModel/IdentityModel/issues/408] after upgrading to IdentityModel.OidcClient v5.0.0 so it's worth being aware of the additonal references which need to be added to the iOS project file.
+I had to workaround an issue https://github.com/IdentityModel/IdentityModel/issues/408 after upgrading to IdentityModel.OidcClient v5.0.0 so it's worth being aware of the additonal references which need to be added to the iOS project file.
 
 WebClient - Asp.Net MVC app from the quickstart, log in with OIDC, redirect and display the claims info. Used as a stepping stone to prove the Identity Server works locally before publishing to Azure.
 
 Steps to recreate can be found in the Word doc DuendeIdentityServerAndAspNetIdentity.docx
 
-To create the Identity Server follow the steps in the (ReadMe)[https://github.com/Appmilla/identity-server-user-registration-template#readme]
+To create the Identity Server follow the steps in the ReadMe https://github.com/Appmilla/identity-server-user-registration-template#readme

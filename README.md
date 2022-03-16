@@ -24,9 +24,10 @@ Console_Client - Used to test the Api during initial development
 
 NetCoreConsole - login using PKCE, call Api and/or refresh the token. Uses pretty much the same server client config as the Xamarin PKCE with different redirect urls. Note when running this it will throw an exception F5 past this and you should get to the login.
 
-WebAuthenticatorDemo - Xamarin.Forms app using Hybrid flow and secret like another app we might be familiar with
+WebAuthenticatorDemo - Xamarin.Forms app using Hybrid flow and secret - update the Constants to point to url's you have published locations of the IdentityServer and API.
 
-WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel OIDC Client library
+WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel OIDC Client library - update the Constants to point to url's you have published locations of the IdentityServer and API.
+
 Please note when using the IdentityModel.OidcClient you may bump into (this problem)[https://github.com/IdentityModel/IdentityModel/issues/408]
 
 The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from (David Britch)[https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html]

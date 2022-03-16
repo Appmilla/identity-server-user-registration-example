@@ -1,5 +1,6 @@
-# IdentityServer User Registration with PKCE Mobile App Client
-IdentityServer v6 with ASP.Net Core Identity for user registration and focus on mobile client using PKCE OAuth 2.0 flow.
+# IdentityServer User Registration example API and clients including a PKCE Mobile App Client
+
+A template to create an IdentityServer v6 with ASP.Net Core Identity for user registration can be found (here)[https://github.com/Appmilla/identity-server-user-registration-template]
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ
 
@@ -21,31 +22,19 @@ Api - Asp.Net Api exposing WeatherForecast endpoint secured by the IdentityServe
 
 Console_Client - Used to test the Api during initial development
 
-IdentityServerHost - the IdentityServer. Note by design the 'Click here to see the claims for your current session' only works when running locally.
-
 NetCoreConsole - login using PKCE, call Api and/or refresh the token. Uses pretty much the same server client config as the Xamarin PKCE with different redirect urls. Note when running this it will throw an exception F5 past this and you should get to the login.
 
 WebAuthenticatorDemo - Xamarin.Forms app using Hybrid flow and secret like another app we might be familiar with
 
 WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel OIDC Client library
+Please note when using the IdentityModel.OidcClient you may bump into (this problem)[https://github.com/IdentityModel/IdentityModel/issues/408]
+
+The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from (David Britch)[https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html]
+
+I had to workaround an (issue)[https://github.com/IdentityModel/IdentityModel/issues/408] after upgrading to IdentityModel.OidcClient v5.0.0 so it's worth being aware of the additonal references which need to be added to the iOS project file.
 
 WebClient - Asp.Net MVC app from the quickstart, log in with OIDC, redirect and display the claims info. Used as a stepping stone to prove the Identity Server works locally before publishing to Azure.
 
 Steps to recreate can be found in the Word doc DuendeIdentityServerAndAspNetIdentity.docx
 
-
-If we don't want to use nuget package would install the template using 
-dotnet new --install
-
-in the directory IdentityServerHost
-
->C:\Nuget\nuget.exe pack C:\appmilla_github\identity-server-user-registration-example\IdentityServerHost\IdentityServerHost.nuspec
-
-dotnet new -i Appmilla.IdentityUserReg.1.0.0.nupkg
-
-Success: Appmilla.IdentityUserReg::1.0.0 installed the following templates:
-Template Name                                   Short Name  Language  Tags
-----------------------------------------------  ----------  --------  -------------------
-Identity Server with ASP.NET User Registration  isuserreg   [C#]      Web/MVC/Razor Pages
-
-C:\appmilla_github\IdentityTemplateTest>dotnet new isuserreg -n IdentityServerRich
+To create the Identity Server follow the steps in the (ReadMe)[https://github.com/Appmilla/identity-server-user-registration-template#readme]

@@ -1,6 +1,6 @@
 # IdentityServer User Registration example API and clients including a PKCE Mobile App Client
 
-A template to create an IdentityServer v6 with ASP.Net Core Identity for user registration can be found (here)[https://github.com/Appmilla/identity-server-user-registration-template]
+A template to create an IdentityServer v6 with ASP.Net Core Identity for user registration can be found at https://github.com/Appmilla/identity-server-user-registration-template
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ
 

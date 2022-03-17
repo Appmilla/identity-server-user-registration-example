@@ -4,15 +4,17 @@ A template to create an IdentityServer v6 with ASP.Net Core Identity for user re
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ
 
+The API is genereated from the Visual Studio template, returning weather data. I used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
+
 Various clients are included which were used at different stages of development:-
 
-Console_Client - used validate IdentityServer and API locally
+Console_Client - used to validate the IdentityServer and API are working locally, used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
 
-WebClient - followed the quickstart using OIDC
+WebClient - followed the quickstart using OIDC https://docs.duendesoftware.com/identityserver/v6/quickstarts/2_interactive/
 
 WebAuthenticatorDemo - basic mobile app without PKCE - this is a stepping stone and not the recommended best practice
 
-NetCoreConsole - prove out the PKCE flow locally
+NetCoreConsole - prove out the PKCE flow locally - based on the sample https://github.com/IdentityModel/IdentityModel.OidcClient.Samples/tree/main/NetCoreConsoleClient
 
 WebAuthenticatorDemo-OIDCClient - the recommended best practice for mobile apps
 

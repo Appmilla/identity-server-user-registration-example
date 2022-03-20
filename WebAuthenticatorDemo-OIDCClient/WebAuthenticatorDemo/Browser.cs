@@ -10,7 +10,31 @@ namespace WebAuthenticatorDemo
     {
         public async Task<BrowserResult> InvokeAsync(BrowserOptions options, CancellationToken cancellationToken = default)
         {
-            WebAuthenticatorResult authResult = await WebAuthenticator.AuthenticateAsync(new Uri(options.StartUrl), new Uri(Constants.RedirectUri));
+            WebAuthenticatorResult authResult;
+
+            try
+            {
+                authResult = await WebAuthenticator.AuthenticateAsync(new Uri(options.StartUrl), new Uri(Constants.RedirectUri));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+
+                if (e is TaskCanceledException)
+                {
+                    return new BrowserResult()
+                    {
+                        ResultType = BrowserResultType.UserCancel
+                    }; 
+                }
+                else
+                {
+                    return new BrowserResult()
+                    {
+                        ResultType = BrowserResultType.UnknownError
+                    }; 
+                }
+            }
             return new BrowserResult()
             {
                 Response = ParseAuthenticatorResult(authResult)

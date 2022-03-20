@@ -33,8 +33,16 @@ namespace WebAuthenticatorDemo
             };
 
             _oidcClient = new OidcClient(options);
+
+            try
+            {
+                _loginResult = await _oidcClient.LoginAsync(new LoginRequest());
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine(exception);
+            }
             
-            _loginResult = await _oidcClient.LoginAsync(new LoginRequest());
             if (_loginResult.IsError)
             {
                 Console.WriteLine("ERROR: {0}", _loginResult.Error);

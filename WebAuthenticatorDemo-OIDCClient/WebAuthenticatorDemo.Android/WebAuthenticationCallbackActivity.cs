@@ -5,7 +5,7 @@ using Xamarin.Essentials;
 
 namespace WebAuthenticatorDemo.Droid
 {
-    [Activity(NoHistory = true, LaunchMode = LaunchMode.SingleTop)]
+    [Activity(LaunchMode = LaunchMode.SingleTop)]
     [IntentFilter(new[] { Intent.ActionView},
         Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable},
         DataScheme = "io.identitymodel.native",

@@ -1,18 +1,20 @@
 # IdentityServer User Registration example API and clients including a PKCE Mobile App Client
 
-A template to create an IdentityServer v6 with ASP.Net Core Identity for user registration can be found (here)[https://github.com/Appmilla/identity-server-user-registration-template]
+A template to create an IdentityServer v6 with ASP.Net Core Identity for user registration can be found at https://github.com/Appmilla/identity-server-user-registration-template
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ
 
+The API is genereated from the Visual Studio template, returning weather data. I used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
+
 Various clients are included which were used at different stages of development:-
 
-Console_Client - used validate IdentityServer and API locally
+Console_Client - used to validate the IdentityServer and API are working locally, used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
 
-WebClient - followed the quickstart using OIDC
+WebClient - followed the quickstart using OIDC https://docs.duendesoftware.com/identityserver/v6/quickstarts/2_interactive/
 
 WebAuthenticatorDemo - basic mobile app without PKCE - this is a stepping stone and not the recommended best practice
 
-NetCoreConsole - prove out the PKCE flow locally
+NetCoreConsole - prove out the PKCE flow locally - based on the sample https://github.com/IdentityModel/IdentityModel.OidcClient.Samples/tree/main/NetCoreConsoleClient
 
 WebAuthenticatorDemo-OIDCClient - the recommended best practice for mobile apps
 
@@ -28,14 +30,14 @@ WebAuthenticatorDemo - Xamarin.Forms app using Hybrid flow and secret - update t
 
 WebAuthenticatorDemo-OIDCClient - Xamarin.Forms app using PKCE and IdentityModel OIDC Client library - update the Constants to point to url's you have published locations of the IdentityServer and API.
 
-Please note when using the IdentityModel.OidcClient you may bump into (this problem)[https://github.com/IdentityModel/IdentityModel/issues/408]
+Please note when using the IdentityModel.OidcClient you may bump into this problem https://github.com/IdentityModel/IdentityModel/issues/408
 
-The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from (David Britch)[https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html]
+The Xamarin apps WebAuthenticatorDemo & WebAuthenticatorDemo-OIDCClient started life as examples from David Britch https://www.davidbritch.com/2020/04/authentication-from-xamarinforms-app.html
 
-I had to workaround an (issue)[https://github.com/IdentityModel/IdentityModel/issues/408] after upgrading to IdentityModel.OidcClient v5.0.0 so it's worth being aware of the additonal references which need to be added to the iOS project file.
+I had to workaround an issue https://github.com/IdentityModel/IdentityModel/issues/408 after upgrading to IdentityModel.OidcClient v5.0.0 so it's worth being aware of the additonal references which need to be added to the iOS project file.
 
 WebClient - Asp.Net MVC app from the quickstart, log in with OIDC, redirect and display the claims info. Used as a stepping stone to prove the Identity Server works locally before publishing to Azure.
 
 Steps to recreate can be found in the Word doc DuendeIdentityServerAndAspNetIdentity.docx
 
-To create the Identity Server follow the steps in the (ReadMe)[https://github.com/Appmilla/identity-server-user-registration-template#readme]
+To create the Identity Server follow the steps in the ReadMe https://github.com/Appmilla/identity-server-user-registration-template#readme

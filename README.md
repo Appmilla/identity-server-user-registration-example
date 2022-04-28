@@ -4,7 +4,7 @@ A template to create an IdentityServer v6 with ASP.Net Core Identity for user re
 
 An overview video with a demo can be found at https://youtu.be/U4WXru88NCQ
 
-The API is genereated from the Visual Studio template, returning weather data. I used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
+The API is generated from the Visual Studio template, returning weather data. I used this quickstart as a reference https://docs.duendesoftware.com/identityserver/v6/quickstarts/1_client_credentials/
 
 Various clients are included which were used at different stages of development:-
 
